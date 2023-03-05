@@ -6,30 +6,74 @@
   </head>
   <body>
 
-    <!-- Defines an HTML form for user input  -->
+    <!-- <form> - Defines an HTML form for user input  -->
+      <form class="" action="index.html" method="post">
 
-    <!-- Defines an input control -->
+      </form>
+    <!-- <input> - Defines an input control  {importent tag}-->
+      <input type="text" name="" value="">
+      <input type="button" name="" value="">
+      <input type="checkbox" name="" value="">
+      <input type="color" name="" value="">
+      <input type="date" name="" value="">
+      <input type="file" name="" value="">
+      <input type="image" name="" value="">
+      <input type="month" name="" value="">
+      
+      <!-- <textarea> - Defines a multiline input control (text area)  -->
+        <textarea name="name" rows="8" cols="80"></textarea>
+        
+        <!-- <button> - Defines a clickable button -->
+          <button type="button" name="button">Button 1</button>
+          
+          <!--  <select> - Defines a drop-down list -->
+      <select class="" name="">
 
-    <!-- Defines a multiline input control (text area)  -->
+      </select>
+      <!-- <optgroup> - Defines a group of related options in a drop-down list -->
+        <optgroup label="">
 
-    <!-- Defines a clickable button -->
+      </optgroup>
+      
+      <!-- <option> - Defines an option in a drop-down list -->
+        <option value=""></option>
 
-    <!-- Defines a drop-down list -->
+    <!-- <label> - Defines a label for an <input> element -->
+      <label for="car">Car</label>
+      
+      <!-- <fieldset> - Groups related elements in a form -->
+        <form class="" action="index.html" method="post">
+          <fieldset>
+          <legend>This my cap tion</legend>
+          <label for="fname">First name</label>
+          <input type="text" name="" value="">
+          <label for="lname">last name</label>
+          <input type="text" name="" value="">
+          <label for="carss"></label>
+          <select class="cars" name="cars" id="carss">
+            <option value="ford">ford</option>
+            <option value="chevy">chevy</option>
+            <option value="dodge">dodge</option>
+          </select>
+      </fieldset>
+      </form>
+    <!-- <legend> - Defines a caption for a <fieldset> element -->
+        <legend>This my cap tion</legend>
 
-    <!-- Defines a group of related options in a drop-down list -->
-
-    <!-- Defines an option in a drop-down list -->
-
-    <!-- Defines a label for an <input> element -->
-
-    <!-- Groups related elements in a form -->
-
-    <!-- Defines a caption for a <fieldset> element -->
-
-    <!-- Specifies a list of pre-defined options for input controls -->
-
-    <!-- Defines the result of a calculation -->
+    <!-- <datalist> - Specifies a list of pre-defined options for input controls -->
+    <datalist class=""></datalist>
+    
+    <!-- <output> - Defines the result of a calculation -->
+    <output name="result"></output>
 
 
+    <form action="" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      <input type="range" name="" id="a">
+      <span>+</span>
+      <input type="number" name="" id="b">
+      <span>=</span>
+      <output name="x" for="a b"></output>
+    </form>
+  
   </body>
 </html>

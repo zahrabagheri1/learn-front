@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <meta charset="utf-8" />
+    <title>Audio and Video</title>
   </head>
   <body>
-
-    <!-- Defines sound content -->
-
-    <!-- Defines multiple media resources for media elements (<video>, <audio> and <picture>) -->
-
-    <!-- Defines text tracks for media elements (<video> and <audio>) -->
-
-    <!-- Defines a video or movie-->
-
+    <!-- <audio> -  Defines sound content -->
+    <audio
+      src="/HTML5/05. Audio and Video/Sogand - Bilite Yektarafe [320].mp3"
+      controls
+      autoplay
+      loop
+      muted
+    ></audio>
+    <!-- <source> - Defines multiple media resources for media elements (<video>, <audio> and <picture>) -->
+    <source
+      src="/HTML5/05. Audio and Video/Sogand - Bilite Yektarafe [320].mp3"
+      type="audio/mp3"
+    />
+    <!-- <track> - Defines text tracks for media elements (<video> and <audio>) -->
+    <track kind="subtitles" src="" srclang="en"/>
+    <!-- <video> - Defines a video or movie-->
+    <video src="/HTML5/05. Audio and Video/y2mate.com - Dedede tik tok_v720P.mp4" autoplay controls preload="metadata" loop muted
+    
+    ></video>
   </body>
 </html>
