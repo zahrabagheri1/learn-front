@@ -3,39 +3,43 @@
                                                     Start Courses Page 
 ====================================================================================================================================================================
 */
+h1{
+    text-align: center;
+}
+
+.mainCourse{
+    display: flex;
+    justify-content: space-around;
+}
 
 div.course {
     width: 400px;
     height: 500px;
     background: white;
     border: 1px solid transparent;
-    position: absolute;
-    top: 300px;
-    left: 400px;
+    position: relative;
 }
 
 div.course2 {
     width: 400px;
     height: 500px;
+    padding: 5px;
     background: white;
     border: 1px solid transparent;
-    position: absolute;
-    top: 300px;
-    left: 850px;
+    position: relative;
 }
 
 div.course3 {
     width: 400px;
     height: 500px;
+    padding: 5px;
     background: white;
-    border: 1px solid transparent;
-    position: absolute;
-    top: 300px;
-    left: 1300px;
+    border: 1px solid transparent rgb(58, 58, 170);
+    position: relative;
 }
 
-h6 {
-	font-size: 1em;
+div p {
+	font-size: 25px;
 }
 
 /*
