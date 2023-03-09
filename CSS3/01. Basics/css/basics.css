@@ -1,4 +1,5 @@
 
+
 /* 01. Comments
 ----------------
 
@@ -9,6 +10,10 @@ Comments are used to explain the code, and may help when you edit the source cod
   /* To Comment out your CSS use this syntax
 
           /* Comment out code here */
+
+body{
+    background-color: rgb(225, 225, 247);
+}
 
 
 /*===========================================================================================================================================*/
@@ -42,6 +47,12 @@ Multiple CSS declarations are separated with semicolons, and declaration blocks 
     font-size: 12px;
   } */
 
+
+h1{
+    color: blueviolet;
+    /* font-size: 50px; */
+}
+
 /*===========================================================================================================================================*/
 
 
@@ -61,11 +72,16 @@ We can divide CSS selectors into five categories:
   4. Pseudo-elements selectors (select and style a part of an element)
   5. Attribute selectors (select elements based on an attribute or attribute value) */
 
+  p#paragraphid{
+    color: brown;
+  }
 
-
-
-
-
+  p.classstyle{
+    color: darkseagreen;
+  }
+  h1.classstyle{
+    color: hotpink;
+  }
 
 /*===========================================================================================================================================*/
 
@@ -78,11 +94,35 @@ We can divide CSS selectors into five categories:
 
 */
 
+h1#color1{
+    color: blueviolet;
+}
+h1#color2{
+    color: red;
+}
+h1#color3{
+    color: royalblue;
+}
+h1#color4{
+    color: green;
+}
 
+h1#rgb{
+    /* rgb(red, green, blue);
+    all color -> 255 - 0 
+    */
+    color: rgb(245, 55, 45);
+}
 
+h1#hex{
+    color: #5f5f5f;
+}
 
+h1#hsl{
+     /* hsl(hue, saturation, lightness); */
+     color: hsl(300, 100%, 50%);
 
-
+}
 
 /*===========================================================================================================================================*/
 
@@ -93,7 +133,14 @@ We can divide CSS selectors into five categories:
     CSS background properties are used to add background effects for elements. */
 
 
-
+    h1#background{
+        background: red;
+        background-color: aquamarine;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-image: url();
+    }
 
 
 
@@ -105,26 +152,60 @@ We can divide CSS selectors into five categories:
 
     The CSS border properties allow you to specify the style, width and color of an elements border. */
 
+    /* 
+        border: size  border-style  color
+    */
+
     /* dotted - Defines a dotted border */
-
+    p#borders1{
+        border-style: dotted;
+        
+    }
     /* dashed - Defines a dashed border */
-
+    p#borders2{
+        border-style: dashed;
+    }
+    
     /* solid - Defines a solid border */
-
+    p#borders3{
+        border-style: solid;
+    }
+    
     /* double - Defines a double border */
-
+    p#borders4{
+        border-style: double;
+    }
+    
     /* groove - Defines a 3D grooved border.  The effect depends on the border-color value */
-
+    p#borders5{
+        border-style: groove;
+    }
+    
     /* ridge - Defines a 3D ridged border.  The effect depends on the border-color value */
-
+    p#borders6{
+        border-style: ridge;
+    }
+    
     /* inset - Defines a 3D inset border.  The effect depends on the border-color value */
-
+    p#borders7{
+        border-style: inset;
+    }
+    
     /* outset - Defines a 3D outset border.  The effect depends on the border-color value */
-
+    p#borders8{
+        border-style: outset;
+    }
+    
     /* none - Defines no border */
-
+    p#borders9{
+        border-style: none;
+    }
+    
     /* hidden - Defines a hidden border */
-
+    p#borders10{
+        border-style: hidden;
+    }
+    
 
 
 /*===========================================================================================================================================*/
@@ -145,18 +226,48 @@ We can divide CSS selectors into five categories:
 
     inherit - specifies that the margin should be inherited from the parent element */
 
+    /* 
+        if it is four number:
+        margin: number1 number2 number3 number4 ;
+        margin: top  right bottom  left ;
+        number1 -> top
+        number2 -> right
+        number3 -> bottom
+        number4 -> left
 
-    /* margin-top */
+        if it is three number: 
+        margin: number1 number2 number3;
+        number1 -> top
+        number2 -> right and left
+        number3 -> bottom
 
+        if it is two number:
+        margin: number1   number2;
+        number1 -> top and right 
+        number2 -> bottom and left
 
-    /* margin-right */
+        if it is one number:
+        margin: (number) -> all side is this number....
+        number -> top & right & bottom & left
+    */
 
-
-    /* margin-bottom */
-
-
-    /* margin-left */
-
+    div.margin{
+        border: #5f5f5f solid 30px;
+        width: 500px;
+        height: 300px;
+        /* margin-top */
+        margin-top: 500px;
+        
+        /* margin-right */
+        margin-right: 400px;
+    
+        /* margin-bottom */
+        margin-bottom: 300px;
+    
+        /* margin-left */
+        margin-left: 200px;
+        
+    }
 
 
 /*===========================================================================================================================================*/
@@ -167,15 +278,48 @@ We can divide CSS selectors into five categories:
 
     Padding is used to create space around an elements content, inside of any defined borders.
 
-    With CSS, you have full control over the padding.  There are properties for setting the padding for each side of an element(top, right, bottom and left)
+    With CSS, you have full control over the padding.  There are properties for setting the padding for each side of an element(top, right, bottom and left)*/
+       /* 
+        if it is four number:
+        padding: number1 number2 number3 number4 ;
+        padding: top  right bottom  left ;
+        number1 -> top
+        number2 -> right
+        number3 -> bottom
+        number4 -> left
 
-    /* padding-top */
+        if it is three number: 
+        padding: number1 number2 number3;
+        number1 -> top
+        number2 -> right and left
+        number3 -> bottom
 
-    /* padding-right */
+        if it is two number:
+        padding: number1   number2;
+        number1 -> top and right 
+        number2 -> bottom and left
 
-    /* padding-bottom */
+        if it is one number:
+        padding: (number) -> all side is this number....
+        number -> top & right & bottom & left
+    */
+    div.padding{
+        border: #812929 solid 30px;
+        width: 500px;
+        height: 300px;
+        
+        /* padding-top */
+        padding-top: 500px;
 
-    /* padding-left */
+        /* padding-right */
+        padding-right: 400px;
+        
+        /* padding-bottom */
+        padding-bottom: 300px;
+        
+        /* padding-left */
+        padding-left: 200px;
+    }
 
 
 
@@ -204,7 +348,11 @@ We can divide CSS selectors into five categories:
 
     inherit - The height/width will be inherited from its parent value. */
 
-
+    div.hw{
+        width: 200px;
+        height: 300px;
+        background: crimson;
+    }
 
 /*===========================================================================================================================================*/
 
@@ -229,7 +377,13 @@ We can divide CSS selectors into five categories:
 
     The box model allows us to add a border around elements and to define space between elements */
 
-
+    div.boxmodel{
+        width: 500px;
+        height: 500px;
+        border: 5px solid lime;
+        padding: 50px;
+        margin: 50px;
+    }
 
 /*===========================================================================================================================================*/
 
@@ -239,7 +393,13 @@ We can divide CSS selectors into five categories:
 
     An outline is a line that is drawn around elements, OUTSIDE the border, to make the element "stand out"*/
 
+    p.outline1{
+        outline-style: dashed;
+    }
 
+    p.outline2{
+        outline-style: dotted;
+    }
 
 
 /*===========================================================================================================================================*/
@@ -248,10 +408,14 @@ We can divide CSS selectors into five categories:
 /* 13. Text
 -------------------
 
-      /*
-      CSS has a lot of properties for formatting text. */
+      /* CSS has a lot of properties for formatting text. */
 
-
+    h1#text1{
+        color: blue;
+        text-align: center;
+        text-decoration: underline;
+        /* text-transform: capitalize; */
+    }
 
 
 
@@ -269,6 +433,13 @@ We can divide CSS selectors into five categories:
     font in the generic family, if no other fonts are available).  The font names should be separated with a comma. */
 
 
+    body{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    h1#fonts{
+        font-family: monospace;
+    }
 
 /*===========================================================================================================================================*/
 
@@ -288,7 +459,7 @@ We can divide CSS selectors into five categories:
 
     */
 
-
+/* https://fonts.google.com/ */
 
 
 /*===========================================================================================================================================*/
@@ -308,7 +479,29 @@ We can divide CSS selectors into five categories:
     a:hover - a link when the user mouses over it
     a:active - a link the moment it is clicked*/
 
+    a{
+        font-size: 30px;
+    }
 
+    a:link{
+        /* a normal, unvisited link */
+        color: rgb(0, 0, 0);
+    }
+
+    a:visited{
+        /* a link the user has visited */
+        color: rgb(255, 0, 0);
+    }
+
+    a:hover{
+        /* a link when the user mouses over it */
+        color: yellow;
+    }
+
+    a:active{
+        /* a link the moment it is clicked */
+        color: rgb(255, 0, 234);
+    }
 
 
 /*===========================================================================================================================================*/
@@ -319,8 +512,19 @@ We can divide CSS selectors into five categories:
 
     The list-style-type property specifies the type of list item marker. */
 
+    ul,ol {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 30px;
+    }
 
+    ul{
+        list-style: circle;
 
+    }
+
+    ol{
+        list-style: square;
+    }
 
 
 
@@ -333,7 +537,9 @@ We can divide CSS selectors into five categories:
 
     Tables with CSS */
 
-
+    table, th , td {
+        border: 1px solid brown;
+    }
 
 
 /*===========================================================================================================================================*/
@@ -348,7 +554,13 @@ We can divide CSS selectors into five categories:
 
     The default display value for most elements is block or inline. */
 
-     
+     li#display{
+        display: inline;
+     }
+
+     li.display{
+        display: block;
+     }
 
 /*===========================================================================================================================================*/
 
@@ -356,7 +568,13 @@ We can divide CSS selectors into five categories:
 /* 20. Max-Width
 -------------------
 
-    Using Max-Width with css
+    Using Max-Width with css*/
+
+    div.max{
+        max-width: 500px;
+        margin: auto;
+        border: 3px solid black;
+    }
 
 /*===========================================================================================================================================*/
 
@@ -366,6 +584,67 @@ We can divide CSS selectors into five categories:
 
     The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute, or sticky) */
 
+    div.static{
+        /* position is static */
+        width: 200px;
+        height: 200px;
+        position: static;
+        background: #00ff00;
+        border: 3px solid black;
+    }
+
+    div.relative{
+        /* position is relative */
+        left: 50px;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        background: #00d9ff;
+        border: 3px solid black;
+    }
+    
+    div.fixed{
+        /* position is fixed */
+        bottom: 0;
+        left: 0;
+        width: 200px;
+        height: 200px;
+        position: fixed;
+        background: #ff00d4;
+        border: 3px solid black;
+    }
+    
+    div.absolute{
+        /* position is absolute */
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 200px;
+        position: fixed;
+        background: #0026ff;
+        border: 3px solid black;
+    }
+    
+    div.sticky{
+        /* position is sticky */
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 200px;
+        position: static;
+        background: #ff000d;
+        border: 3px solid black;
+    }
+
+
+    div.overlapping{
+        width: 500px;
+        height: 500px;
+        background: blueviolet;
+        border: 1px solid blue;
+        z-index: -2;
+
+    }
 /*===========================================================================================================================================*/
 
 
@@ -383,6 +662,18 @@ We can divide CSS selectors into five categories:
 
     scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content. */
 
+    div.overflow{
+        width: 300px;
+        height: 50px;
+        background: pink;
+        border: 3px solid purple;
+        overflow: visible;
+        overflow: hidden;
+        overflow: auto;
+        overflow: scroll;
+    }
+
+
 /*===========================================================================================================================================*/
 
 
@@ -392,6 +683,43 @@ We can divide CSS selectors into five categories:
     The CSS float property specifies how an element should float.
 
     The CSS clear property specifies what elements can float beside the cleared element and on which side. */
+
+
+    div.div1{
+        width: 500px;
+        height: 100px;
+        background: palevioletred;
+        border: 3px solid lawngreen;
+        float: right;
+    }
+
+
+    div.div2{
+        width: 500px;
+        height: 100px;
+        background: rgb(255, 0, 85);
+        border: 3px solid rgb(0, 0, 0);
+        float: left;
+    }
+
+
+    div.div3{
+        width: 500px;
+        height: 100px;
+        background: rgb(126, 11, 49);
+        border: 3px solid rgb(0, 255, 191);
+        float: inherit;
+    }
+
+
+    div.div4{
+        width: 500px;
+        height: 100px;
+        background: rgb(0, 47, 255);
+        border: 3px solid lawngreen;
+        float: initial;
+    }
+
 
 /*===========================================================================================================================================*/
 
@@ -406,7 +734,30 @@ We can divide CSS selectors into five categories:
     Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so
     the element can sit next to other elements. */
 
+    span.a{
+        display: inline;
+        width: 500px;
+        height: 200px;
+        border: 30px solid rgb(255, 0, 0);
+        background: yellow;
+    }
+    
+    span.b{
+        display: inline-block;
+        width: 500px;
+        height: 200px;
+        border: 3px solid rgb(255, 0, 0);
+        background: rgb(204, 0, 255);
+    }
 
+    span.c{
+        display: block;
+        width: 500px;
+        height: 200px;
+        border: 3px solid rgb(255, 0, 0);
+        background: rgb(0, 47, 255);
+    }
+    
 /*===========================================================================================================================================*/
 
 
@@ -415,7 +766,17 @@ We can divide CSS selectors into five categories:
 
 
     Use CSS to align the content */
+    
 
+    div.center{
+        margin: auto;
+        padding: 10px;
+        width: 50%;
+        height: 200px;
+        background: #5f5f5f;
+        border: 3px solid greenyellow;
+
+    }
 /*===========================================================================================================================================*/
 
 
@@ -434,6 +795,26 @@ We can divide CSS selectors into five categories:
     3. adjacent sibling selector (+)
     4. general sibling selector (~) */
 
+    div.combinators p{
+        color: orange;
+    }
+
+    div.combinators > p{
+        color: blue;
+    }
+    
+    /* div.combinators, p.red{
+        color: red;
+    } */
+
+    div.combinators + p{
+        color: green;
+    }
+
+    /* div.combinators ~ p{
+        color: palevioletred;
+    } */
+
 /*===========================================================================================================================================*/
 
 
@@ -441,6 +822,17 @@ We can divide CSS selectors into five categories:
 -------------------
 
     Pseudo-classes can be combined with CSS classes. */
+
+    div.hover{
+        color: black;
+        width: 50px;
+        height: 60px;
+        background: #ebb0e1;
+    }
+
+    div.hover:hover{
+        background: rgb(255, 230, 0);
+    }
 
 /*===========================================================================================================================================*/
 
@@ -450,6 +842,9 @@ We can divide CSS selectors into five categories:
 
     A CSS pseudo-element is used to style specified parts of an element. */
 
+    p::first-line{
+        /* color: red; */
+    }
 
 /*===========================================================================================================================================*/
 
@@ -459,6 +854,14 @@ We can divide CSS selectors into five categories:
 
     The opacity property specifies the opacity/ transparency of an element */
 
+    img.googleimg{
+        opacity: 0.5;
+    }
+    img.googleimg:hover{
+        opacity: 1.0;
+    }
+
+
 /*===========================================================================================================================================*/
 
 
@@ -466,6 +869,9 @@ We can divide CSS selectors into five categories:
 -------------------
 
     Use CSS to create Navigation Bar */
+    li{
+        display: inline;
+    }
 
 
 /*===========================================================================================================================================*/
@@ -475,6 +881,7 @@ We can divide CSS selectors into five categories:
 -------------------
 
     Use CSS to create a dropdown */
+
 
 /*===========================================================================================================================================*/
 
@@ -504,6 +911,10 @@ We can divide CSS selectors into five categories:
 
     The [attribute] selector is used to select elements with a specified attribute. */
 
+
+    a[target]{
+        background: #0026ff;
+    }
 /*===========================================================================================================================================*/
 
 
@@ -512,6 +923,36 @@ We can divide CSS selectors into five categories:
 
     You can style Forms with CSS */
 
+    input[type=text], select{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid pink;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit]{
+        width: 100%;
+        background-color: darkgreen;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover{
+        background-color: darkblue;
+
+    }
+
+    div.form{
+        border-radius: 5px;
+        background: grey;
+        padding: 20px;
+    }
 /*===========================================================================================================================================*/
 
 
@@ -522,6 +963,7 @@ We can divide CSS selectors into five categories:
     Counters let you adjust the appearance of content based on its placement in the document. */
 
 
+     
 /*===========================================================================================================================================*/
 
 
@@ -582,3 +1024,11 @@ We can divide CSS selectors into five categories:
 
     In face, if you use the !important rule, it will override ALL previous styling rules for that
     specific property on that element! */
+
+
+    div.importent{
+        width: 100%;
+        height: 500px;
+        background: orange;
+        background: orchid !important;
+    }
