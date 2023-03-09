@@ -1,3 +1,16 @@
-body {
-  background: red;
+
+
+
+div.border-radius{
+  width: 400px;
+  height: 200px;
+  background-color: lightblue;
+  border-radius: 25px;
+}
+
+
+p#border-img{
+  border: 50px solid transparent;
+  padding: 15px;
+  border-image: url(https://media.istockphoto.com/id/618734380/photo/imge-of-mint.jpg?s=612x612&w=0&k=20&c=wM6B5B9lhybagGbpsF5GnrO1YUF_t1z_oWPdTG1edp8=) 30 repeat;
 }

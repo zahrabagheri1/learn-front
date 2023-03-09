@@ -3,12 +3,24 @@
   <head>
 
     <title>Basic CSS3 Properties</title>
+    <link rel="stylesheet" href="css/basics.css">
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
+    <!-- icon google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-
-
-
+    <style>
+      /* we can style css in here */
+    </style>
   </head>
   <body>
+    <!-- 02. Where to Insert CSS -->
+    <!-- <h1 style="color: blue;">heading 1</h1>
+    <h1>heading 2</h1> -->
+
 
     <h1>this is an example</h1>
 
@@ -35,26 +47,26 @@
     <h1 id="background">background</h1>
 
     <!-- 07. Borders -->
-    <p id="borders1">border styling</p>
-    <p id="borders2">border styling</p>
-    <p id="borders3">border styling</p>
-    <p id="borders4">border styling</p>
-    <p id="borders5">border styling</p>
-    <p id="borders6">border styling</p>
-    <p id="borders7">border styling</p>
-    <p id="borders8">border styling</p>
-    <p id="borders9">border styling</p>
-    <p id="borders10">border styling</p>
+    <p id="borders1">border styling dotted</p>
+    <p id="borders2">border styling dashed</p>
+    <p id="borders3">border styling solid</p>
+    <p id="borders4">border styling double</p>
+    <p id="borders5">border styling groove</p>
+    <p id="borders6">border styling ridge</p>
+    <p id="borders7">border styling inset</p>
+    <p id="borders8">border styling outset</p>
+    <p id="borders9">border styling none</p>
+    <p id="borders10">border styling hidden</p>
 
 
     <!-- 08. Margins -->
     <div class="margin">
-
+      <h1>This is a margin</h1>
     </div>
 
     <!-- 09. Padding -->
     <div class="padding">
-      <h1>sample text</h1>
+      <h1>This is a padding</h1>
     </div>
 
     <br>
@@ -69,7 +81,7 @@
 
     <!-- 11. Box Model -->
     <div class="boxmodel">
-
+      <h1>This is a content</h1>
     </div>
 
     <!-- 12. Outline -->
@@ -83,11 +95,26 @@
     <h1 id="text1">this is some text</h1>
 
     <!-- 14. Fonts -->
-    <h1 id="fonts">Google Icons</h1>
-
+    <h1 id="fonts">Font Awessam</h1>
     <!-- 15. Icons -->
-    <i class="material-icons">cloud</i>
-
+    <i class="material-icons">Google Icons</i>
+    <span class="material-symbols-outlined">
+      favorite
+    </span>
+    
+    <span class="material-symbols-outlined">
+      home
+    </span>
+    <span class="material-symbols-outlined">
+        star
+    </span>
+    <span class="material-symbols-outlined">
+     radio_button_checked
+    </span>
+    <span class="material-symbols-outlined">
+       bolt
+    </span>
+      <br>
     <!-- 16. Links -->
     <a href="#">Sample Link</a>
 
@@ -123,7 +150,7 @@
 
     <!-- 19. Display -->
     <ul>
-      <li class="display"><a href="#">Home</a></li>
+      <li id="display"><a href="#">Home</a></li>
       <li class="display"><a href="#">Services</a></li>
     </ul>
 
@@ -137,25 +164,31 @@
 
     <!-- 21. Position -->
     <div class="static">
-
+      <p>position is static</p>
     </div>
-
+    
     <div class="relative">
-
+      <p>position is relative</p>
     </div>
-
+    
     <div class="fixed">
-
+      <p>position is fixed</p>
     </div>
-
+    
     <div class="absolute">
-
+      <p>position is absolute</p>
     </div>
-
+    
     <div class="sticky">
+      <p>position is sticky</p>
+    </div>
+
+
+    <div class="overlapping">
 
     </div>
 
+    <br><br><br>
     <!-- 22. Overflow -->
     <div class="overflow">
 
@@ -203,8 +236,8 @@
 
     </div>
 
-    <p>paragraph 4 is not in the div</p>
-    <p>paragraph 5 is not in the div</p>
+    <p class="red">paragraph 4 is not in the div</p>
+    <p class="red">paragraph 5 is not in the div</p>
 
 
     <!-- Child Selector -->
@@ -213,7 +246,7 @@
     <p>The descendant selector matches all elements that are descendant of a
     specified element. </p>
 
-    <div class="child-selector">
+    <div class="combinators child-selector">
       <p>Paragraph 1 in the div</p>
       <p>paragraph 2 in the div</p>
       <section><p>paragraph 3 in the div</p><section>
@@ -229,7 +262,7 @@
     <p>The descendant selector matches all elements that are descendant of a
     specified element. </p>
 
-    <div class="adjacent-sibling-selector">
+    <div class=" combinators adjacent-sibling-selector">
       <p>Paragraph 1 in the div</p>
       <p>paragraph 2 in the div</p>
       <section><p>paragraph 3 in the div</p><section>
@@ -245,7 +278,7 @@
     <p>The descendant selector matches all elements that are descendant of a
     specified element. </p>
 
-    <div class="general-sibling-selector">
+    <div class=" combinators general-sibling-selector">
       <p>Paragraph 1 in the div</p>
       <p>paragraph 2 in the div</p>
       <section><p>paragraph 3 in the div</p><section>
@@ -261,22 +294,22 @@
     </div>
 
     <!-- 28. Pseudo Element -->
-    <p>This is an example of how to use Pseudo and add special effects
-    to your text with css check it out.</p>
+    <p>This is an example ::first-line pseudo-element of how to use Pseudo and add special effects
+    to your text with css check it out. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolore pariatur reiciendis voluptatem? Explicabo, odit. Deleniti ducimus saepe distinctio, incidunt nobis ullam beatae iusto impedit ex et laborum optio ipsum sunt consequuntur cum nesciunt vero voluptatem. Iusto hic cumque quis id exercitationem. In velit deserunt corrupti quis exercitationem quo quas.</p>
 
     <!-- 29. Opacity -->
-    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="">
+    <img class="googleimg" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="">
 
     <!-- 30. Navigation Bar -->
     <ul>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
     </ul>
 
     <!-- 31. Dropdowns -->
@@ -313,8 +346,8 @@
     <img id="next-sprite" src="" alt="">
 
     <!-- 34. Attribute Selectors -->
-    <a class="link" href="#">Link</a>
-    <a class="link" href="#">Link 2</a>
+    <a class="link" href="#" target="_blank">Link</a>
+    <a class="link" href="#" target="_top">Link 2</a>
 
     <!-- 35. Form -->
     <div class="form">
@@ -367,6 +400,8 @@
     <h1></h1>
 
     <!-- 40. Important! -->
-
+    <div class="importent">
+      
+    </div>
   </body>
 </html>
