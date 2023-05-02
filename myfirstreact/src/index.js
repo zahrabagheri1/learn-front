@@ -4,7 +4,9 @@ import Event from './component/Event'
 import App from './component/App';
 import Car from './component/Car';
 import Form from './component/Form';
+import TempApp from './component/TempApp';
 import './app.css';
+
 
 // let str = "Do you?!"
 //* With JSX you can write expressions inside curly braces { }.
@@ -48,9 +50,15 @@ import './app.css';
 // );
 
 //? form component
-ReactDOM.render( <Form/>, 
- document.getElementById('root')
+// ReactDOM.render( <Form/>, 
+//  document.getElementById('root')
 
+// );
+
+
+//Todo: 
+ReactDOM.render( <TempApp/>, 
+ document.getElementById('root')
 );
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
