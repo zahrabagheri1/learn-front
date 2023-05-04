@@ -5,6 +5,7 @@ import App from './component/App';
 import Car from './component/Car';
 import Form from './component/Form';
 import TempApp from './component/TempApp';
+import Routing from './component/Routing';
 import './app.css';
 
 
@@ -57,9 +58,22 @@ import './app.css';
 
 
 //Todo: Temperature Changeing
-ReactDOM.render( <TempApp/>, 
- document.getElementById('root')
+// ReactDOM.render( <TempApp/>, 
+//  document.getElementById('root')
+// );
+
+
+// ? about routing
+ReactDOM.render( <Routing/>,
+document.getElementById('root')
 );
+
+
+
+
+
+
+
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
