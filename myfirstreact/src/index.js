@@ -56,7 +56,7 @@ import './app.css';
 // );
 
 
-//Todo: 
+//Todo: Temperature Changeing
 ReactDOM.render( <TempApp/>, 
  document.getElementById('root')
 );
