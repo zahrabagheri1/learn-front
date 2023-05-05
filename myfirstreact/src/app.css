@@ -1,3 +1,49 @@
-body{
-    background-color: aqua;
+.temptempelet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(128, 200, 212, 0.699);
+  border-radius: 50px;
+  margin: 20px;
+  padding: 30px;
+}
+
+.temptitle {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.tempform {
+  display: flex;
+  justify-content: center;
+}
+
+.tempdiv {
+  margin: 20px;
+}
+
+.templabel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* margin: 10px; */
+  font-size: 20px;
+}
+
+.tempinput {
+  border: solid rgb(0, 0, 255) 2px;
+  border-radius: 3px;
+  width: 200px;
+  height: 20px;
+}
+.tempinput:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -5px -5px 55px 5px yellow;
+  border-radius: 3px;
+  /* box-shadow: -5px -5px 25px 2px blue,5px 5px 25px 7px yellow; */
+
 }
