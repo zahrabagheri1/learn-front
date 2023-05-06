@@ -64,12 +64,15 @@ import './app.css';
 
 
 // ? about routing
+// ReactDOM.render( <Routing/>,
+// document.getElementById('root')
+// );
+
+
+// ?
 ReactDOM.render( <Routing/>,
-document.getElementById('root')
+    document.getElementById('root')
 );
-
-
-
 
 
 
