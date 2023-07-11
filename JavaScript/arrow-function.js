@@ -1,3 +1,5 @@
+//? Difference between Regular functions and Arrow functions
+
 
 //todo: normal function syntax
 // function add(num1, num2) {

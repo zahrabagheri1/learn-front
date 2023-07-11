@@ -5,7 +5,7 @@ const number1 = [2, 4, 3, 5]
 console.log(number1.map((num)=> num * num))
 console.log(number1)
 
-// map make a new array
+//todo: map make a new array
 
 let number2 = number1.map(x => x*x).sort(
     (a,b)=>{
