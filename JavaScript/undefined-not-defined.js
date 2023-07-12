@@ -85,3 +85,12 @@ console.log(bloom);
 let susan = 51 * undefined;
 console.log(susan)
 //Output: NAN
+
+
+//todo: difference between null and undefined
+
+console.log(typeof (undefined))
+//Output: undefined
+
+console.log(typeof(null))
+//Output: object
