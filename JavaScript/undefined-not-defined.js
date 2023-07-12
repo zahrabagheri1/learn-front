@@ -11,7 +11,7 @@ let name;
 
 ///! 2. when value is not assigned in array or object
 
-let arrayOfNum = [25, 12, 45, ,55]
+let arrayOfNum = [25, 12, 45, ,55];
 // console.log(arrayOfNum);
 //Output: [ 25, 12, 45, <1 empty item>, 55 ]
 
@@ -30,7 +30,7 @@ let objectOfNum = {
 let multiplication = (a,b)=>{
     let c = a*b;
     // return c;
-}
+};
 
 let multiply = multiplication(5,4);
 // console.log(multiply)
@@ -53,8 +53,8 @@ Butterfly = 25;
 //Output: ReferenceError: Butterfly is not defined
 
 ///! 3. variable is declare but it don't have any value
-var aster
-console.log(aster)
+var aster;
+console.log(aster);
 aster = 10;
 //Output: undefined
 
@@ -83,5 +83,14 @@ console.log(bloom);
 //Output: NAN
 
 let susan = 51 * undefined;
-console.log(susan)
+console.log(susan);
 //Output: NAN
+
+
+//todo: difference between null and undefined
+
+console.log(typeof (undefined));
+//Output: undefined
+
+console.log(typeof(null));
+//Output: object
